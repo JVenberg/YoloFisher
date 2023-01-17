@@ -1,0 +1,4 @@
+runs/
+partitioned_data/
+cli.log
+yolo*.pt
