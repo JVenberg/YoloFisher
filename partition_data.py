@@ -24,7 +24,7 @@ def get_split(image_dir, label_dir, split=0.8):
 
 
 def copy_into_partition(train, val, dir='partitioned_data'):
-    shutil.rmtree(dir)
+    shutil.rmtree(dir, ignore_errors=True)
     os.makedirs(os.path.join(dir, 'images/train/'), exist_ok=True)
     os.makedirs(os.path.join(dir, 'images/val/'), exist_ok=True)
     os.makedirs(os.path.join(dir, 'labels/train/'), exist_ok=True)
